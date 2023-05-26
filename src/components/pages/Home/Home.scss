@@ -1,0 +1,118 @@
+.banner img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.img-overlay {
+  position: relative;
+}
+
+.img-overlay:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption {
+  top: 50%;
+  bottom: 0;
+  text-align: left;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  height: fit-content;
+}
+
+.lg-react-element {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: 25%;
+  padding: 10px;
+}
+
+.gallery-item img {
+  object-fit: cover;
+  height: 240px;
+  width: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.35);
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.btn-dark {
+  border-width: 0;
+  background-color: #212529;
+  color: #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+  color: #212529;
+  background-color: #fff;
+}
+
+.nav-tabs .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  border-width: 0;
+}
+
+.grid-layout {
+  --bs-columns: 5;
+  --bs-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card .list-group-item {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1405px) {
+  .grid-layout {
+    --bs-columns: 3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-item {
+    width: 50%;
+  }
+  .grid-layout {
+    --bs-columns: 2;
+  }
+}

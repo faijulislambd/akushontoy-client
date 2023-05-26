@@ -1,0 +1,27 @@
+.social-icon-bar button {
+  display: inline-flex;
+  background: #fff !important;
+  color: #212529 !important;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  height: 2.3rem;
+  width: 2.3rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.social-icon-bar button:hover,
+.social-icon-bar button:active,
+.social-icon-bar button:focus {
+  background: #7694ff !important;
+  color: #fff !important;
+}

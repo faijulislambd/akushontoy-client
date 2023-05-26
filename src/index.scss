@@ -1,0 +1,27 @@
+$primary: #7694ff;
+$primary-hover: #5679f7;
+$btn-primary-color: #fff;
+$btn-padding-x: 1.5rem;
+$btn-padding-y: 0.65rem;
+$btn-border-radius: 100px;
+$enable-cssgrid: true;
+* {
+  font-family: "Jost", sans-serif;
+}
+
+.logo {
+  font-family: "Bangers", cursive;
+  text-transform: uppercase;
+}
+
+.active {
+  color: $primary-hover !important;
+}
+
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  color: #fff !important;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";

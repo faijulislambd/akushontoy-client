@@ -1,0 +1,16 @@
+.toy-card {
+  border-width: 0;
+}
+
+.toy-card img {
+  object-fit: cover;
+  height: 20rem;
+}
+
+.fs-7 {
+  font-size: 0.9rem;
+}
+
+.lh-0 {
+  line-height: 0 !important;
+}
