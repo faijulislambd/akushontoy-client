@@ -1,4 +1,3 @@
-import React from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -9,7 +8,7 @@ const Banner = () => {
         <div className="img-overlay">
           <img
             className="d-block w-100"
-            src="https://i.ibb.co/0yVbWWs/banner-1.jpg"
+            src="https://i.ibb.co/XtyxgLJ/banner-10.jpg"
             alt="Banner One"
           />
         </div>
@@ -25,7 +24,7 @@ const Banner = () => {
         <div className="img-overlay">
           <img
             className="d-block w-100"
-            src="https://i.ibb.co/3Cp8ccV/banner-2.jpg"
+            src="https://i.ibb.co/dctM1Bz/banner-20.jpg"
             alt="Second slide"
           />
         </div>

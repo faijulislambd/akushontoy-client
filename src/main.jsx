@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         path: "/toys",
         element: <Toys></Toys>,
         loader: () => {
-          return fetch("https://akushontoy-server.vercel.app/toys");
+          return fetch("http://localhost:5000/toys");
         },
       },
       {
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) => {
-          return fetch(`https://akushontoy-server.vercel.app/toy/${params.id}`);
+          return fetch(`http://localhost:5000/toy/${params.id}`);
         },
       },
       {

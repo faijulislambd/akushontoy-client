@@ -6,7 +6,7 @@ $btn-padding-y: 0.65rem;
 $btn-border-radius: 100px;
 $enable-cssgrid: true;
 * {
-  font-family: "Jost", sans-serif;
+  font-family: "Jost", sans-serif !important;
 }
 
 .logo {
@@ -23,5 +23,3 @@ $enable-cssgrid: true;
 .btn.btn-primary:focus {
   color: #fff !important;
 }
-
-@import "node_modules/bootstrap/scss/bootstrap";

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Home.scss";
 import Banner from "./Banner";
-import { Container } from "react-bootstrap";
 import Gallery from "./Gallery";
 import CategoryTab from "./CategoryTab";
 import { useEffect } from "react";
@@ -10,6 +9,7 @@ import Loader from "../../shared/Loader/Loader";
 import CTA from "./CTA";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import useTitle from "../../../hooks/useTitle";
+import { Box } from "@mui/material";
 // ..
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
 
   const loadedCategories = async () => {
-    await fetch("https://akushontoy-server.vercel.app/categories")
+    await fetch("http://localhost:5000/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data));
     setLoading(false);
@@ -40,24 +40,24 @@ const Home = () => {
         <Banner></Banner>
       </section>
       <section className="py-6">
-        <Container>
+        <Box>
           <Gallery></Gallery>
-        </Container>
+        </Box>
       </section>
       <section className="py-6 bg-primary text-white">
-        <Container>
+        <Box>
           <CategoryTab categories={categories}></CategoryTab>
-        </Container>
+        </Box>
       </section>
       <section className="py-6" data-aos="fade-in">
-        <Container>
+        <Box>
           <Counter categories={categories}></Counter>
-        </Container>
+        </Box>
       </section>
       <section className="py-6 bg-primary text-white">
-        <Container>
+        <Box>
           <CTA></CTA>
-        </Container>
+        </Box>
       </section>
     </div>
   );
